@@ -1,0 +1,26 @@
+Feature: Signing up
+
+  Scenario: Unsuccessful signup - no info
+    Given the user is at the sign up page
+    When they submit with no sign up information
+    Then they should see an error message
+
+  Scenario: Unsuccessful signup - invalid email form
+    Given the user is at the sign up page
+    When they submit with bad Email format
+    Then they should see an error message
+
+  Scenario: Unsuccessful signup - short password
+    Given the user is at the sign up page
+    When they submit with a short password
+    Then they should see an error message
+
+  Scenario: Unsuccessful signup - incorrect confirmation password
+    Given the user is at the sign up page
+    When they submit with a mismatched confirmation password
+    Then they should see an error message
+
+	Scenario: Successful signup
+		Given the user is at the sign up page
+		When they submit valid signup information
+		Then they should see a welcome message

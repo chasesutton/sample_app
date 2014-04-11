@@ -106,7 +106,7 @@ Then /^they should see an error message$/ do
   expect(page).to have_selector('div.alert.alert-error')
 end
 
-Then /^they should see a success message$/ do
+Then /^they should see a welcome message$/ do
   expect(page).to have_selector('div.alert.alert-success')
 end
 

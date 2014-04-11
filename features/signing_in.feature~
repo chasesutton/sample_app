@@ -2,19 +2,17 @@ Feature: Signing in
   
   Scenario: Unsuccessful password signin
     Given a user visits the signin page
-			And the user has an account
-    When they submit invalid password signin information
+    When they submit invalid password information
     Then they should see an error message
 
   Scenario: Unsuccessful E-mail signin
     Given a user visits the signin page
-			And the user has an account
-    When they submit invalid E-mail signin information
+    When they submit invalid E-mail information
     Then they should see an error message
 
   Scenario: Unsuccessful complete signin
     Given a user visits the signin page
-    When they submit no signin information
+    When they submit no information
     Then they should see an error message
 
   Scenario: Successful signin
