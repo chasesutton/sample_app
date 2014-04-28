@@ -1,6 +1,7 @@
 SampleApp::Application.routes.draw do
-  resources :users #allows for REST-style URL lookup /users/<user_id> and all other actions
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :users
+  resources :sessions,   only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
   root  'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
