@@ -1,0 +1,10 @@
+Lacking capabilites from default project:
+=========================================
+
+>No text areas for Interests and Quotes
+>Hidden User Stories from non-friend users
+
+Capabilities beyond default project:
+====================================
+
+>Users are able to setup an individualized icons
