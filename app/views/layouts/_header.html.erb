@@ -1,11 +1,10 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "Buffbook", '#', id: "logo" %>
+      <%= link_to "Buffbook", root_url, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "Home",    '#' %></li>
-          <li><%= link_to "Help",    '#' %></li>
+          <li><%= link_to "Home",    root_url %></li>
           <% if signed_in? %>
             <li><%= link_to "Buffs", users_path %></li>
             <li id="fat-menu" class="dropdown">

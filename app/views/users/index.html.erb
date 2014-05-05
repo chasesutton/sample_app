@@ -1,12 +1,15 @@
-
-<% provide(:title, 'All Buffs') %>
-<h1>All users</h1>
-
-<%= will_paginate %>
+<% provide(:title, 'BuffBook Users') %>
+<h1>BuffBook Users</h1>
+<h2>
+<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search for Friends" %>
+    <%= submit_tag "Search", :name => nil %>
+    <% end %>
+</h2>
+<h2><%= will_paginate %></h2>
 
 <ul class="users">
   <%= render @users %>
 </ul>
-
-<%= will_paginate %>
+<h2><%= will_paginate %></h2>
 

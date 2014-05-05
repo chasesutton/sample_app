@@ -2,7 +2,10 @@
 
 /* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
+$cu-gold: #CFB87C;
+$cu-black: #000000;
+$cu-dark-gray: #565A5C;
+$cu-light-gray: #A2A4A3;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -17,6 +20,8 @@ html {
 
 body {
   padding-top: 60px;
+  background-color: $cu-gold;
+  color: $cu-black;
 }
 
 section {
@@ -53,7 +58,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: $cu-dark-gray;
 }
 
 p {
@@ -68,14 +73,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: $cu-gold;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: $cu-dark-gray;
     text-decoration: none;
   }
 }
@@ -85,12 +90,12 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  border-top: 1px solid $cu-black;
+  color: $cu-light-gray;
   a {
     color: $gray;
     &:hover {
-      color: $grayDarker;
+      color: $cu-dark-gray;
     }
   }
   small {
@@ -110,7 +115,7 @@ footer {
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid $cu-light-gray;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -140,7 +145,7 @@ stats {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid $grayLighter;
+    border-left: 1px solid $cu-light-gray;
     color: gray;
     &:first-child {
       padding-left: 0;
@@ -193,18 +198,16 @@ input {
 /* Users index */
 
 .users {
-  list-style: none;
-  margin: 0;
+  list-style:none;
   li {
     overflow: auto;
-    padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    padding:10px 0;
+    border-top: 1px solid $cu-light-gray;
     &:last-child {
-      border-bottom: 1px solid $grayLighter;
+      border-bottom: 1px solid $cu-light-gray;
     }
   }
 }
-
 
   /* miscellaneous */
 
@@ -232,7 +235,7 @@ input {
   display: block;
 }
 .timestamp {
-  color: $grayLight;
+  color: $cu-light-gray;
 }
 .gravatar {
   float: left;

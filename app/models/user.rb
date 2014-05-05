@@ -33,6 +33,11 @@ class User < ActiveRecord::Base
     relationships.find_by(followed_id: other_user.id).destroy
   end
 
+#######Search implementation#######
+  def self.search(query)
+    where("name LIKE ?", "%#{query}%")
+  end
+###################################
   def User.new_remember_token
     SecureRandom.urlsafe_base64
   end
