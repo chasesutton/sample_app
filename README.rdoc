@@ -1,6 +1,6 @@
-#CSCI 3308 sp2014 Methods and Tools Final project
-#
-#Created by Chase Sutton, Brian Weinstein, & Thomas Ostdiek
-#This is the default Facebook clone project.
-#
-#The deployed app is live at https://enigmatic-savannah-5966.herokuapp.com/
++#CSCI 3308 sp2014 Methods and Tools Final project
++#
++#Created by Chase Sutton, Brian Weinstein, & Thomas Ostdiek
++#This is the default Facebook clone project.
++#
++#The deployed app is live at https://enigmatic-savannah-5966.herokuapp.com/
